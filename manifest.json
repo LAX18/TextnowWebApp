@@ -1,6 +1,6 @@
 {
-  "short_name": "Textnow",
-  "name": "Textnow",
+  "short_name": "TextNow",
+  "name": "TextNow",
   "icons": [
     {
       "src": "https://i.imgur.com/wcJUkRg.png",
@@ -14,8 +14,8 @@
     }
   ],
   "start_url": "/TextnowWebApp/index.html",
-  "background_color": "#FFFFFF",
+  "background_color": "#5222B4",
   "display": "standalone",
   "scope": "/TextnowWebApp",
-  "theme_color": "#525659"
+  "theme_color": "#5222B4"
 }
