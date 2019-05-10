@@ -2,8 +2,26 @@
 <head>
 <title>Textnow</title>
   <link rel="manifest" href="https://lax18.github.io/TextnowWebApp/manifest.json">
+  <script src="script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+  navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+  // Registration was successful
+  console.log('Registered!');
+  }, function(err) {
+  // registration failed :(
+  console.log('ServiceWorker registration failed: ', err);
+  }).catch(function(err) {
+  console.log(err);
+  });
+  });
+  } else {
+  console.log('service worker is not supported');
+  }
+  </script>
 </head>
-<body>
+<body onload="onLoad();">
 <iframe src="https://www.textnow.com" width="100%" height="100%"></iframe>
 </body>
 </html>
