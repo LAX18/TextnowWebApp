@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Textnow</title>
+  <link rel="manifest" href="https://lax18.github.io/TextnowWebApp/manifest.json">
+  <script src="script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+  navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+  // Registration was successful
+  console.log('Registered!');
+  }, function(err) {
+  // registration failed :(
+  console.log('ServiceWorker registration failed: ', err);
+  }).catch(function(err) {
+  console.log(err);
+  });
+  });
+  } else {
+  console.log('service worker is not supported');
+  }
+  </script>
+</head>
+<body onload="onLoad();">
+<frameset rows = "100%"> 
+        <frame name = "top" src = "http://www.textnow.com" /> 
+        <noframes> 
+            <body>The browser you are working does not support frames.</body> 
+        </noframes> 
+    </frameset> 
+</body>
+</html>
