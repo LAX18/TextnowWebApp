@@ -1,0 +1,21 @@
+{
+  "short_name": "Textnow",
+  "name": "Textnow",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/wcJUkRg.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "https://i.imgur.com/uMp8TZs.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#525659"
+}
