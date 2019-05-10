@@ -13,9 +13,9 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/messaging",
+  "start_url": "/TextnowWebApp/index.html",
   "background_color": "#FFFFFF",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/TextnowWebApp",
   "theme_color": "#525659"
 }
